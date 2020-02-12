@@ -6,12 +6,24 @@ package com.test.xmltojson;
 
 public class obj2 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public obj2() {
-    }
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String name;
 
+	public obj2() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public obj2(java.lang.String name) {
+		this.name = name;
+	}
 
 }
